@@ -40,3 +40,7 @@ btn:hover {
   box-shadow: rgba(0, 0, 0, 0, 0.3);
   filter: grayscale(0);
 }
+
+.emoji-name {
+  font-weight: 700;
+}
