@@ -25,6 +25,9 @@ body {
 .container .btn {
   padding: 10px 40px;
   border: none;
+  filter: grayscale();
+  transition: filter 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .text {
@@ -35,4 +38,5 @@ body {
 
 btn:hover {
   box-shadow: rgba(0, 0, 0, 0, 0.3);
+  filter: grayscale(0);
 }
