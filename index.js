@@ -19,11 +19,10 @@ async function getEmoji() {
 }
 
 getEmoji();
-console.log(emoji);
 
 btnEl.addEventListener("click", (e) => {
-  /*
-    google.com => emoji api
-    www.emoji-api.com
-  */
+  const randomNum = Math.floor(Math.random() * emoji.length);
+  //console.log(randomNum);
+  btnEl.innerText = emoji[randomNum].emojiName;
+  emojiNameEl.innerText = emoji[randomNum].emojiCode;
 });
